@@ -16,12 +16,17 @@ app.get('/',async (req,res)=>{
 
 app.post('/',async (req,res)=>{
     res.status(500).send({
-        message:"Success",
+        message:"Post Req",
         error:true,
     })
 })
 
-
+app.patch('/',async (req,res)=>{
+    res.status(500).send({
+        message:"Pathe Req",
+        error:true,
+    })
+})
 
 app.listen(PORT,()=>{
     console.log(`App running at port ${PORT}`)
